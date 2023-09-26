@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Hidden Gem Vacation Destinations </title>
+        <link rel="stylesheet" href="index.css"/>
+        <script defer type="text/javascript" src="src/index.js"></script>
+    </head>
+    <body>
+        <br>
+        <br>
+        <div id="hidden-gem-vacation-destinations-header">
+            <img src="https://i.ibb.co/KDcKYVt/Hidden-Gem-Vacation-Destinations-Logo.png" alt="project-pic"/>
+        </div>
+        <br>
+        <nav class= "navbar navbar-expand-lg bg-body-tertiary">
+            <div>
+              <h1 class="navbar-text">
+                Welcome to Hidden Gem! <br> Check out our captivating digital showcase of vacation destinations around the world. <br> Use the "Create Your Own!" button to add your own destination!
+              </h1>
+            </div>
+        </nav>
+        <br>
+        <div id="create-destination">
+            <button id="create-button" class="evnt-button">Create your Own!</button>
+           <form id="create-vacation-form" class="collapsed">
+                <h3>Create your own vacation destination! </h3>
+                <label for="add-name">Name</label>
+                <br>
+                <input type="text" id="custom-name" name="name" placeholder="Enter Location Name">
+                <br>
+                <br>
+
+                <label for="add-desc">Describe your Destination</label>
+                <br>
+                <input type="text" id="custom-desc" name="description" placeholder="Enter Description">
+                <br>
+                <br>
+
+                <label for="add-activites">Excursions/Activities</label>
+                <br>
+                <input type="text" id="custom-desc" name="origin" placeholder="Enter Excursions/Activities">
+                <br>
+                <br>
+
+                <label for="add-img">Add an Image!</label>
+                <br>
+                <input type="src" id="custom-img" name="image" placeholder="Enter Image URL">
+                <br>
+                <br>
+
+                <input type="submit" name="submit" value="Create!" class="evnt-button"/>
+           </form>
+           
+        <div id="listed-destinations">
+            <ul id="list-destinations-here" class="list-ul">
+            </ul>
+        </div>
+
+        <footer>
+            <div class="info-footer">
+                <img src="https://i.ibb.co/bzfPVnD/Hidden-Gems-Footer.png"
+            </div>
+            <script>
+                if ( window.history.replaceState ) {
+                  window.history.replaceState( null, null, window.location.href );
+                }
+            </script>
+        </footer>
+    </body>
+  </html>

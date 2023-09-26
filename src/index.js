@@ -64,17 +64,17 @@ fetch("http://127.0.0.1:3000/vacation-destinations")
             destinationCard.addEventListener('mouseout', (e) => onMouseOut(e))
 
             function onMouseOver(e){
-                destinationCard.style.boxShadow = '10px 10px 10px rgb(223, 43, 43)'
-                destinationCard.style.border = 'rgb(223, 43, 43) solid 1px'
-                destinationName.style.textShadow = '1px 2px 2px rgb(223, 43, 43)'
-                infoBtn.style.boxShadow = '2px 2px 2px 2px rgb(223, 43, 43)'
+                destinationCard.style.boxShadow = '10px 10px 10px rgb(255, 199, 179)'
+                destinationCard.style.border = 'rgb(255, 199, 179) solid 1px'
+                destinationName.style.textShadow = '1px 2px 2px rgb(255, 199, 179)'
+                infoBtn.style.boxShadow = '2px 2px 2px 2px rgb(255, 199, 179)'
             }
 
             function onMouseOut(e){
                 destinationCard.style.boxShadow = '4px 4px 10px #c9c8c8'
                 destinationCard.style.border = 'rgb(255, 255, 255) solid 1px'
                 destinationName.style.textShadow = 'none'
-                infoBtn.style.boxShadow = '2px 2px 2px 2px rgb(225, 194, 35)'
+                infoBtn.style.boxShadow = '2px 2px 2px 2px rgb(255, 199, 179)'
             }
 
             // const originInfo = document.createElement('h4')

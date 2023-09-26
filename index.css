@@ -1,0 +1,98 @@
+#hidden-gem-vacation-destinations-header img {
+  image-rendering: center;    
+}
+
+#hidden-gem-vacation-destinations-header {
+  text-align: center;
+}
+
+.info-footer { 
+  text-align: center;
+
+}
+
+#info-footer {
+  text-align: center;
+}
+
+.list-ul {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content:center;
+}
+
+.list-li {
+  list-style:none;
+  box-shadow: 4px 4px 10px #c9c8c8;
+  text-align: center;
+  border: rgb(0, 0, 0) solid 1px;
+  padding: 1rem;
+  width: 20rem;
+  height: 45rem;
+  display: inline-grid;
+  margin: 1rem 2rem;
+  color:rgb(0, 0, 0);
+  background-color: #000000;
+  opacity: 1;
+  background-image: repeating-radial-gradient( circle at 0 0, transparent 0, #d7c3a8 4px ), repeating-linear-gradient( #d7c3a8,#d7c3a8)
+  
+}
+
+.list-li img {
+  justify-self: center;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+body {
+  background-image: url("https://i.ibb.co/Mc3nJxn/Background-Pic-Puglia.jpg");
+  background-repeat: repeat;
+}
+
+
+footer {
+  margin-top: auto;
+}
+
+#create-vacation-form {
+  font-family:'Gabriola';
+  color: rgb(0, 0, 0);
+  text-align: center;
+  text-shadow: 3px 5px 5px black;
+  font-size: 22px;
+}
+
+.evnt-button {
+  font-size: 22px;
+  font-family:'Gabriola';
+  box-shadow: 2px 2px 2px 2px rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  color:rgb(0, 0, 0);
+}
+
+#evnt-btn {
+  font-size: 22px;
+  font-family:'Gabriola';
+  box-shadow: 2px 2px 2px 2px rgb(255, 255, 255);
+  background-color: rgb(149, 140, 110);
+  color:rgb(255, 255, 255);
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Garamond';
+  font-style: italic
+}
+
+.navbar{
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  background-image: linear-gradient( #00eba1, #73d3f1 )
+}

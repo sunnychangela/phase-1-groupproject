@@ -1,0 +1,60 @@
+{
+  "vacation-destinations": [
+    {
+      "id": 1,
+      "name": "Jaisalmer, India",
+      "image": "https://i.ibb.co/qgH1cT3/Jaisalmer-India.png",
+      "activities": "Excursions: Camel safaris, desert camping, sightseeing",
+      "description": "Built on golden sandstone, the city of Jaisalmer in India is flourishing with ancient history and visual spectacle. Surrounded by the Thar Desert, the city is home to forts, havelis, and temples unlike any in the world."
+    },
+    {
+      "id": 2,
+      "name": "Wadi Rum, Jordan",
+      "image": "https://i.ibb.co/QF0Kn4T/Wadi-Rum-Jordan.png",
+      "activities": "Excursions: Red sea snorkeling and scuba diving, sightseeing, private tours, and trekking",
+      "description": "Also known as the Valley of the Moon, Wadi Rum is a valley made entirely of granite and sandstone found in southern Jordan. Bordering Saudi Arabia, it is also close to Petra, the ancient city known for the archaeological wonder Al-Khazneh."
+    },
+    {
+      "id": 3,
+      "name": "Tbilisi, Georgia",
+      "image": "https://i.ibb.co/N9ZqVTh/Tbilisi-Georgia.png",
+      "activities": "Excursions: Natural sulfur water baths, architectural tours, culinary experiences, nightlife",
+      "description": "One of the oldest capitals in Europe, Tbilisi has roots in the Middle Ages. It’s a cosmopolitan hub surrounded by natural beauty and a rich history that’s waiting to be learned."
+    },
+    {
+      "id": 4,
+      "name": "Gondar, Ethiopia",
+      "image": "https://i.ibb.co/x5G5R6J/Gondar-Ethiopia.png",
+      "activities": "Excursions: Hiking, sightseeing, national parks, and museums",
+      "description": "Ethiopia is home to some of the most diverse biomes in Africa. The city of Gondar is entrenched in a rich history of medieval Christianity and Islam. Home to the castle of Emperor Fasil, the city is also a haven for hiking and natural beauty due to its lush landscape."
+    },
+    {
+      "id": 5,
+      "name": "Cancun, Mexico",
+      "image": "https://i.ibb.co/X5pvZSB/Cancun-Mexico.jpg",
+      "activities": "Excursions: Snorkeling, Nightlife(clubs,bars etc.), ziplining",
+      "description": "A remarkable destination that offers a blend of natural beauty, vibrant culture and stunning beaches. Cancun is a paradise for beach lovers, adventure seekers and those looking to unwind."
+    },
+    {
+      "id": 6,
+      "name": "Roatan, Honduras",
+      "image": "https://i.ibb.co/t8MYyT3/Roatan-Honduras.jpg",
+      "activities": "Excursions: Snorkeling, explore lush jungles, dining",
+      "description": "Roatan is a hidden gem in the Caribbean known for its diverse marine life and natural beauty. located off the northern coast of Honduras it is the largest of the bay islands."
+    },
+    {
+      "id": 7,
+      "name": "The Maldives",
+      "image": "https://i.ibb.co/sWYMhyJ/The-Maldives.jpg",
+      "activities": "Excursions: World-class spa, fine dining, snorkeling",
+      "description": "The Maldives is a tropical paradise nestled in the Indian ocean. this destination embodies pure luxury, tranquility and natural beauty. Maldives is a dream destination offering an escape from the reality of everyday life."
+    },
+    {
+      "id": 8,
+      "name": "Hawaii",
+      "image": "https://i.ibb.co/FsMMX3y/Hawaii.png",
+      "activities": "Excursions: Snorkeling, surfing, volcano tours, dining",
+      "description": "Hawaii is a tropical getaway that offers rich culture and diverse landscapes. Hawaii has breathtaking beaches and lush rainforests. Hawaii is a slice of paradise that offers something for everyone."
+    }
+  ]
+}
