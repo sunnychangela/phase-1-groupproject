@@ -51,7 +51,7 @@
 }
 
 body {
-  background-image: url("https://i.ibb.co/Mc3nJxn/Background-Pic-Puglia.jpg");
+  background-image: url("https://i.ibb.co/Z201r2V/Amalfi-Coast-Beaches-Feature-scaled.jpg");
   background-repeat: repeat;
 }
 
@@ -86,8 +86,8 @@ footer {
 }
 
 h1 {
-  font-family: 'Garamond';
-  font-style: italic
+  font-family: 'Gabriola';
+  font-weight: lighter;
 }
 
 .navbar{
