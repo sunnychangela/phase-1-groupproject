@@ -8,7 +8,7 @@ fetch("http://127.0.0.1:3000/vacation-destinations")
     
     function addNewDestination(e) {
         e.preventDefault()
-        // console.log(e.target.name.value)
+       
         const newDestinationObj = {
             "name": e.target.name.value,
             "image": e.target.image.value,
@@ -37,8 +37,7 @@ fetch("http://127.0.0.1:3000/vacation-destinations")
         const ul = document.querySelector('#list-destinations-here')
         
         destinationsArr.forEach((destinationObj) => {
-            //console.log(creaturesObj)
-            //console.log(li)
+            
             const destinationCard = document.createElement('li')
             destinationCard.classList = "list-li"
             
@@ -47,7 +46,7 @@ fetch("http://127.0.0.1:3000/vacation-destinations")
             destinationCard.append(destinationName)
             
             
-            //console.log(destinationCard)
+            
 
             const img = document.createElement('img')
             img.src = destinationObj.image
@@ -77,15 +76,7 @@ fetch("http://127.0.0.1:3000/vacation-destinations")
                 infoBtn.style.boxShadow = '2px 2px 2px 2px rgb(225, 194, 35)'
             }
 
-            // const originInfo = document.createElement('h4')
-            // originInfo.textContent = creatureObj.origin
-            // creatureCard.appendChild(originInfo)
-
-        
-            // const descInfo = document.createElement('p')
-            // descInfo.textContent = creatureObj.description
-            // creatureCard.appendChild(descInfo)
-            // // console.log(descInfo)
+            
             
             const infoBtn = document.createElement('button')
             infoBtn.classList = 'collapsed'
@@ -99,7 +90,7 @@ fetch("http://127.0.0.1:3000/vacation-destinations")
 
             
             deleteBtn.addEventListener('click', (e) => deleteDestination(e))
-                        // creatureCard.append(deleteBtn)
+                        
 
 
             infoBtn.addEventListener('click', (e) => renderInfo(e))
@@ -145,7 +136,7 @@ fetch("http://127.0.0.1:3000/vacation-destinations")
 
     const toggleFormButtom = document.querySelector('#create-button')
     const formContainer = document.getElementById('create-destination')
-    // const newCreatureForm = document.querySelector('#create-monst-form')
+    
 
     document.addEventListener("DOMContentLoaded", function() {
         newDestinationForm.style.display = "none";
