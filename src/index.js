@@ -77,7 +77,7 @@ fetch("http://localhost:3000/vacation-destinations")
             }
 
             let likeCount = 0;
-            // <i class="fa-solid fa-heart fa-xs" style="color: #ff0000;"></i> 
+            
 
             
 
@@ -169,7 +169,5 @@ fetch("http://localhost:3000/vacation-destinations")
     toggleFormButtom.addEventListener('click', handleFormButton)
 
   
-  // function opLikeButton(){
-            //     likes++;
-            //     likeBtn.textContent = `Like(${likes})`
-            // }
+  
+    
