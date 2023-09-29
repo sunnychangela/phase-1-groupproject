@@ -17,7 +17,8 @@ fetch("http://127.0.0.1:3000/vacation-destinations")
         }
 
         renderDestinations([newDestinationObj])
-        newDestinationForm.reset()
+        newDestinationForm.reset() 
+        console.log("newDestination")
 
         fetch('http://127.0.0.1:3000/vacation-destinations', {
                 method: 'POST',
@@ -37,15 +38,31 @@ fetch("http://127.0.0.1:3000/vacation-destinations")
         const ul = document.querySelector('#list-destinations-here')
         
         destinationsArr.forEach((destinationObj) => {
+            console.log("destinationsArr")
             
             const destinationCard = document.createElement('li')
-            destinationCard.classList = "list-li"
+            destinationCard.classList = "list-li" 
+
+            const Bs = document.createElement('p')
+            Bs.textContent = 'wtf'
+            destinationCard.append(Bs)
+            
+
+            const likeBtn = document.createElement('button')
+            likeBtn.classList = 'like-btn'
+            likeBtn.id = 'like-btn'
+            likeBtn.textContent = 'Like'
+            destinationCard.appendChild(likeBtn) 
+            
             
             const destinationName = document.createElement('h1')
             destinationName.textContent = destinationObj.name
             destinationCard.append(destinationName)
             
             
+
+            // const list = document.getElementsByClassName('list-li')
+            // list.appendChild(likeBtn)
             
 
             const img = document.createElement('img')
@@ -76,7 +93,16 @@ fetch("http://127.0.0.1:3000/vacation-destinations")
                 infoBtn.style.boxShadow = '2px 2px 2px 2px rgb(225, 194, 35)'
             }
 
+            // const likeBtn = document.createElement('button')
+            // likeBtn.textContent = 'Like' 
+            // destinationCard.append(likeBtn)
+
+            // const loveBtn = document.getElementById('create-destination')
+
+           
             
+
+        
             
             const infoBtn = document.createElement('button')
             infoBtn.classList = 'collapsed'
@@ -86,14 +112,32 @@ fetch("http://127.0.0.1:3000/vacation-destinations")
 
             const deleteBtn = document.createElement('button')
             deleteBtn.textContent = `Delete`
-            deleteBtn.classList = "evnt-button"
+            deleteBtn.classList = "evnt-button"  
+
+            // const likeBtn = document.createElement('button')
+            // likeBtn.textContent = 'Like'
+            // let likes = 0; 
+        
+            // function opLikeButton(){
+            //     likes++;
+            //     likeBtn.textContent = `Like(${likes})`
+            // }
+        // const listDestinationsHereUL = document.getElementById("list-destinations-here")
+        // listDestinationsHereUL.appendChild(likeBtn)
+
+            
 
             
             deleteBtn.addEventListener('click', (e) => deleteDestination(e))
                         
 
 
-            infoBtn.addEventListener('click', (e) => renderInfo(e))
+            infoBtn.addEventListener('click', (e) => renderInfo(e)) 
+
+            
+                
+
+          
             
             
 
@@ -118,6 +162,7 @@ fetch("http://127.0.0.1:3000/vacation-destinations")
                 if (infoHidden){
                     infoBtn.textContent = 'LEARN MORE'
                     activitiesInfo.remove()
+                    likeBtn.remove()
                     descInfo.remove()
                     deleteBtn.remove()
 
@@ -125,6 +170,7 @@ fetch("http://127.0.0.1:3000/vacation-destinations")
                 else {
                     infoBtn.textContent = 'HIDE'
                     destinationCard.append(activitiesInfo)
+                    destinationCard.append(likeBtn)
                     destinationCard.append(descInfo)
                     destinationCard.append(deleteBtn)
                 }
@@ -154,7 +200,19 @@ fetch("http://127.0.0.1:3000/vacation-destinations")
         }
     }
     
-    toggleFormButtom.addEventListener('click', handleFormButton)
+    toggleFormButtom.addEventListener('click', handleFormButton) 
+
+//     const likeBtn = document.createElement('button')
+//     likeBtn.textContent = 'Like'
+//     let likes = 0; 
+
+//     function opLikeButton(){
+//         likes++;
+//         likeBtn.textContent = `Like(${likes})`
+//     }
+// const listDestinationsHereUL = document.getElementById("list-destinations-here")
+// listDestinationsHereUL.appendChild(likeBtn) 
+
 
   
 

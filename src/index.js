@@ -76,7 +76,17 @@ fetch("http://localhost:3000/vacation-destinations")
                 infoBtn.style.boxShadow = '2px 2px 2px 2px rgb(255, 199, 179)'
             }
 
-          
+            let likeCount = 0;
+            // <i class="fa-solid fa-heart fa-xs" style="color: #ff0000;"></i> 
+
+            
+
+
+            const likeBtn = document.createElement('button')
+            likeBtn.classList = 'like-btn'
+            likeBtn.id = 'like-btn'
+            likeBtn.textContent = `❤️Like (${likeCount})`
+            destinationCard.appendChild(likeBtn)
             
             const infoBtn = document.createElement('button')
             infoBtn.classList = 'collapsed'
@@ -86,7 +96,9 @@ fetch("http://localhost:3000/vacation-destinations")
 
             const deleteBtn = document.createElement('button')
             deleteBtn.textContent = `Delete`
-            deleteBtn.classList = "evnt-button"
+            deleteBtn.classList = "evnt-button" 
+
+            likeBtn.addEventListener('click', (e) =>     likeBtn.textContent = `❤️Like (${++likeCount})` )
 
             
             deleteBtn.addEventListener('click', (e) => deleteDestination(e))
@@ -157,4 +169,7 @@ fetch("http://localhost:3000/vacation-destinations")
     toggleFormButtom.addEventListener('click', handleFormButton)
 
   
-
+  // function opLikeButton(){
+            //     likes++;
+            //     likeBtn.textContent = `Like(${likes})`
+            // }
